@@ -5,7 +5,8 @@ import './Body.css'
 import Blog from '../Blog/Blog';
 const Body = () => {
     const [infos,setInfos]=useState([])
-    const [carts,setCarts]=useState(0)
+    const [carts,setCarts]=useState(0);
+    const [breaks,setBreaks]=useState(0);
     useEffect(()=>{
         fetch('info.json')
         .then(res=>res.json())
@@ -14,6 +15,21 @@ const Body = () => {
     const clickToAddCart=(info)=>{
         const newCart= carts+parseInt(info.time);
         setCarts(newCart)
+    }
+    const breakTimeAddToCart=()=>{
+        setBreaks('10')
+    }
+    const breakTimeAddToCart2=()=>{
+        setBreaks('20')
+    }
+    const breakTimeAddToCart3=()=>{
+        setBreaks('30')
+    }
+    const breakTimeAddToCart4=()=>{
+        setBreaks('40')
+    }
+    const breakTimeAddToCart5=()=>{
+        setBreaks('50')
     }
     return (
         <div className='body-container'>
@@ -47,17 +63,17 @@ const Body = () => {
                 <div className='break-item'>
                     <h3>Add a break</h3>
                     <div className='second'>
-                        <button>10s</button>
-                        <button>20s</button>
-                        <button>30s</button>
-                        <button>40s</button>
-                        <button>50s</button>
+                        <button onClick={breakTimeAddToCart}>10s</button>
+                        <button onClick={breakTimeAddToCart2}>20s</button>
+                        <button onClick={breakTimeAddToCart3}>30s</button>
+                        <button onClick={breakTimeAddToCart4}>40s</button>
+                        <button onClick={breakTimeAddToCart5}>50s</button>
                     </div>
                 </div>
                 <div>
                     <h2>Exercise Details</h2>
                     <h4>Exercise Time: {carts}Mins</h4>
-                    <h4>Break Time: </h4>
+                    <h4>Break Time: {breaks}</h4>
                 </div>
             </div>
             <Blog></Blog>
