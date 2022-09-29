@@ -38,3 +38,22 @@
     margin-top: -10px;
     font: 600;
 }
+.break-item h3{
+    margin-left: 10px;
+}
+.second{
+    display: flex;
+    gap: 20px;
+    background-color: gray;
+    border-radius: 10px;
+}
+.second button{
+    border-radius: 100px;
+    border: none;
+    height: 30px;
+    margin-left: 5px;
+}
+.second button:hover{
+    background-color:darkolivegreen;
+    color: white;
+}

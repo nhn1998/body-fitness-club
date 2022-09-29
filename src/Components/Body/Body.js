@@ -39,6 +39,20 @@ const Body = () => {
                         <p>Age</p>
                     </div>
                 </div>
+                <div className='break-item'>
+                    <h3>Add a break</h3>
+                    <div className='second'>
+                        <button>10s</button>
+                        <button>20s</button>
+                        <button>30s</button>
+                        <button>40s</button>
+                    </div>
+                </div>
+                <div>
+                    <h2>Exercise Details</h2>
+                    <h4>Exercise Time: </h4>
+                    <h4>Break Time: </h4>
+                </div>
             </div>
             <Blog></Blog>
         </div>
