@@ -9,13 +9,13 @@
         "id":2,
         "name": "Legs Up",
         "img":"img2.jpg",
-        "time":"5 mins"
+        "time":"8 mins"
     },
     {
         "id":3,
         "name": "Side Belly",
         "img":"img3.jpg",
-        "time":"5 mins"
+        "time":"15 mins"
     },
     {
         "id":4,
@@ -27,12 +27,12 @@
         "id":5,
         "name": "Flexybility",
         "img":"img5.jpg",
-        "time":"5 mins"
+        "time":"10 mins"
     },
     {
         "id":6,
         "name": "Push Up",
         "img":"img6.jpg",
-        "time":"5 mins"
+        "time":"8 mins"
     }
 ]
