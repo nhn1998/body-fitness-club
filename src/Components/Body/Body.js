@@ -18,18 +18,23 @@ const Body = () => {
     }
     const breakTimeAddToCart=()=>{
         setBreaks('10')
+        localStorage.setItem('breaks1', 10)
     }
     const breakTimeAddToCart2=()=>{
         setBreaks('20')
+        localStorage.setItem('breaks2', 20)
     }
     const breakTimeAddToCart3=()=>{
         setBreaks('30')
+        localStorage.setItem('breaks3', 30)
     }
     const breakTimeAddToCart4=()=>{
         setBreaks('40')
+        localStorage.setItem('breaks4', 40)
     }
     const breakTimeAddToCart5=()=>{
         setBreaks('50')
+        localStorage.setItem('breaks5', 50)
     }
     return (
         <div className='body-container'>
@@ -75,6 +80,7 @@ const Body = () => {
                     <h4>Exercise Time: {carts}Mins</h4>
                     <h4>Break Time: {breaks}</h4>
                 </div>
+                <button className='activity-btn'>Activity Completed</button>
             </div>
             <Blog></Blog>
         </div>

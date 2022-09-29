@@ -55,6 +55,14 @@
     height: 30px;
     margin:auto;
 }
+.activity-btn{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(gray,blue);
+    color: white;
+    border-radius: 15px;
+}
+
 .second button:hover{
     background-color:darkolivegreen;
     color: white;
@@ -74,5 +82,12 @@
     }
     .second{
         color:white
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px){
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      margin: auto;
     }
 }
