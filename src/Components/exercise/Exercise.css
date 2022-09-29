@@ -25,3 +25,6 @@
     background-image: linear-gradient(maroon,black);
     color: white;
 }
+@media screen and (max-width: 576px){
+    
+}
