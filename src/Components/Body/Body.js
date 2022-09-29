@@ -78,7 +78,7 @@ const Body = () => {
                 <div>
                     <h2>Exercise Details</h2>
                     <h4>Exercise Time: {carts}Mins</h4>
-                    <h4>Break Time: {breaks}</h4>
+                    <h4>Break Time: {breaks}s</h4>
                 </div>
                 <button className='activity-btn'>Activity Completed</button>
             </div>
